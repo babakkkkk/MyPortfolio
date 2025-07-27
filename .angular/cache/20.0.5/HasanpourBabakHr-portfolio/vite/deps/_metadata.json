@@ -114,7 +114,7 @@
     },
     "@angular/common/locales/global/es": {
       "src": "../../../../../../node_modules/@angular/common/locales/global/ir.js",
-      "file": "@angular_common_locales_global_ir.js",
+      "file": "@angular_common_locales_global_es.js",
       "fileHash": "f1f8cd25",
       "needsInterop": true
     }
