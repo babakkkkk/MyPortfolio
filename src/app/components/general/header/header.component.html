@@ -33,12 +33,12 @@
                         <img *ngIf='languageFormControl.value == "en"' width="20px" src="https://www.worldometers.info/img/flags/us-flag.gif" alt="English">
                         <span *ngIf='languageFormControl.value == "en"' class="flag-text">English</span>
 
-                        <img *ngIf='languageFormControl.value == "es"' width="20px" src="https://www.worldometers.info/img/flags/ir-flag.gif" alt="Persian">
-                        <span [style]="setTextAlign('Header.Item1' | translate)" *ngIf='languageFormControl.value == "es"' class="flag-text">{{"Lang.Persian" | translate}}</span>
+                        <img *ngIf='languageFormControl.value == "ir"' width="20px" src="https://www.worldometers.info/img/flags/ir-flag.gif" alt="Persian">
+                        <span [style]="setTextAlign('Header.Item1' | translate)" *ngIf='languageFormControl.value == "ir"' class="flag-text">{{"Lang.Persian" | translate}}</span>
                         <svg class='arrow-language' xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z"/></svg>
                     </div>
                     <div ngbDropdownMenu aria-labelledby="dropdownForm1">
-                        <div (click)='changeLanguage("es")' style='border-bottom-left-radius: 0px !important;border-bottom-right-radius: 0px !important;' class="language-container language-container-selector active" [class.active]='languageFormControl.value == "es"'>
+                        <div (click)='changeLanguage("ir")' style='border-bottom-left-radius: 0px !important;border-bottom-right-radius: 0px !important;' class="language-container language-container-selector active" [class.active]='languageFormControl.value == "ir"'>
                             <img width="20px" src="https://www.worldometers.info/img/flags/ir-flag.gif" alt="Persian">
                             <span [style]="setTextAlign('Header.Item1' | translate)" class="flag-text">{{"Lang.Persian" | translate}}</span>
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2 arrow-active" viewBox="0 0 16 16">
@@ -90,7 +90,7 @@
                       </li>
                       <li  [style]="setTextAlign('Header.Item1' | translate)">
                             <div class="language-container">
-                                <div (click)='changeLanguage("es")' style='border-bottom-left-radius: 0px !important;border-bottom-right-radius: 0px !important;' class="language-container language-container-selector active" [class.active]='languageFormControl.value == "es"'>
+                                <div (click)='changeLanguage("ir")' style='border-bottom-left-radius: 0px !important;border-bottom-right-radius: 0px !important;' class="language-container language-container-selector active" [class.active]='languageFormControl.value == "ir"'>
                                     <img src="https://www.worldometers.info/img/flags/ir-flag.gif" alt="Persian">
                                     <span class="flag-text"  [style]="setTextAlign('Header.Item1' | translate)"> {{"Lang.Persian" | translate}}</span>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2 arrow-active" viewBox="0 0 16 16">
