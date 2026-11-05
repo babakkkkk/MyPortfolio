@@ -33,7 +33,7 @@ export class AppComponent implements OnInit, OnDestroy{
     this.titleService.setTitle( "Babak Hasanpour | Frontend Developer" );
 
     this.metaService.addTags([
-      {name: 'keywords', content: 'Frontend, software, developer'},
+      {name: 'keywords', content: 'Frontend, software, developer, Babak, Hasanpour, توسعه دهنده نرم افزار , بابک, حسن پور , بابک حسن پور, برنامه نویس , طراح وب, Backend, طراح سایت, طراح وبسایت, برنامه نویس وب, برنامه نویس هوش مصنوعی, هوش مصنوعی, برنامه نویس AI, Agent, Asp.net, .netCore, SQL Swerver, Angular, Unity, Android, برنامه نویس موبایل, برنامه نویس android, برنامه نویس صنعتی, برنامه نویسی خطوط تولید'},
       {name: 'description', content: 'Con 4 años de experiencia desarrollando sistemas, interfaces, bots y soluciones tecnológicas  para hacer de la web un lugar mejor. En mi trabajo me gusta liderar, proponer y ejecutar ideas, escribir y refactorizar código limpio, reutilizable y escalable.'},
     ]);
 
