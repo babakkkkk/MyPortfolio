@@ -33,7 +33,7 @@ export class HeaderComponent implements OnInit {
   @HostListener('window:scroll', ['$event']) 
 
   responsiveMenuVisible: Boolean = false;
-  pageYPosition: number;
+  pageYPosition!: number;
   languageFormControl: UntypedFormControl= new UntypedFormControl();
   cvName: string = "";
 
@@ -51,11 +51,11 @@ export class HeaderComponent implements OnInit {
 
   }
 
-  scroll(el) {
+  scroll(el: any) {
     if(document.getElementById(el)) {
-      document.getElementById(el).scrollIntoView({behavior: 'smooth'});
+      document.getElementById(el)?.scrollIntoView({behavior: 'smooth'});
     } else{
-      this.router.navigate(['/home']).then(()=> document.getElementById(el).scrollIntoView({behavior: 'smooth'}) );
+      this.router.navigate(['/home']).then(()=> document.getElementById(el)?.scrollIntoView({behavior: 'smooth'}) );
     }
     this.responsiveMenuVisible=false;
   }
@@ -100,7 +100,7 @@ export class HeaderComponent implements OnInit {
   }
 
   @HostListener('window:scroll', ['getScrollPosition($event)'])
-    getScrollPosition(event) {
+    getScrollPosition(event: any) {
         this.pageYPosition=window.pageYOffset
     }
 

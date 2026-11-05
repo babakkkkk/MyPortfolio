@@ -15,7 +15,7 @@ import { ParticlesService } from './services/particles/particles.service';
 })
 export class AppComponent implements OnInit, OnDestroy{
   title = 'HasanpourBabakHr-portfolio';
-  private lenis: Lenis;
+  private lenis!: Lenis;
 
   constructor(
     private titleService: Title,
