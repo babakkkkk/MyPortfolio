@@ -6,7 +6,7 @@
     "start": "ng serve",
     "build": "ng build",
     "build-portfolio": "ng build --configuration production",
-    "build:prod": "ng build --configuration production --base-href https://babakhasanpour.ir/",
+    "build:prod": "ng build --configuration production --base-href http://babakhasanpour.ir/",
     "deploy": "npm run build:prod && ngh --dir=dist/HasanpourBabakHr-portfolio --cname=babakhasanpour.ir",
     "deploy:ci": "ngh --dir=dist/HasanpourBabakHr-portfolio --cname=babakhasanpour.ir --no-silent",
     "predeploy": "npm run build:prod",
